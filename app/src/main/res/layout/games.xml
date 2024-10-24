@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EDF5F6">
+
+    <!-- Toolbar en la parte superior -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@color/azul_claro">
+        <!-- Texto en la Toolbar -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Play Juegos"
+            android:textColor="@color/blanco"
+            android:textSize="34sp"
+            android:textStyle="bold" />
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar">
+
+        <!-- Fila con Imagen y CheckBox -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imageAngry"
+                android:layout_width="143dp"
+                android:layout_height="100dp"
+                android:layout_marginEnd="8dp"
+                android:src="@drawable/angry" />
+
+            <CheckBox
+                android:id="@+id/checkBoxAngry"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Angry Birds"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imageDragon"
+                android:layout_width="143dp"
+                android:layout_height="100dp"
+                android:layout_marginEnd="8dp"
+                android:src="@drawable/dragon" />
+
+            <CheckBox
+                android:id="@+id/checkBoxDragon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dragon Fly"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imageRacing"
+                android:layout_width="143dp"
+                android:layout_height="100dp"
+                android:layout_marginEnd="8dp"
+                android:src="@drawable/racing" />
+
+            <CheckBox
+                android:id="@+id/checkBoxRacing"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hill Climbing Racing"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imageDefense"
+                android:layout_width="143dp"
+                android:layout_height="100dp"
+                android:layout_marginEnd="8dp"
+                android:src="@drawable/defense" />
+
+            <CheckBox
+                android:id="@+id/checkBoxDefense"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Radiant Defense"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imageSoccer"
+                android:layout_width="143dp"
+                android:layout_height="100dp"
+                android:layout_marginEnd="8dp"
+                android:src="@drawable/soccer" />
+
+            <CheckBox
+                android:id="@+id/checkBoxSoccer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pocket Soccer"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imageNinja"
+                android:layout_width="143dp"
+                android:layout_height="100dp"
+                android:layout_marginEnd="8dp"
+                android:src="@drawable/ninja" />
+
+            <CheckBox
+                android:id="@+id/checkBoxNinja"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ninja Jump"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imageAir"
+                android:layout_width="143dp"
+                android:layout_height="100dp"
+                android:layout_marginEnd="8dp"
+                android:src="@drawable/air"/>
+
+            <CheckBox
+                android:id="@+id/checkBoxAir"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="Air Control"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/floatingActionButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="65dp"
+                android:backgroundTint="@color/azul_claro"
+                android:clickable="true"
+                app:srcCompat="@drawable/captura_de_pantalla_2024_10_22_205650" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

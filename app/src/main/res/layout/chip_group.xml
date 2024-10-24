@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EDF5F6">
+
+    <TextView
+        android:id="@+id/textoPlataformas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PLATAFORMAS: "
+        android:textColor="#494141"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"/>
+
+    <!-- Grupo de botones chip -->
+    <com.google.android.material.chip.ChipGroup
+        android:id="@+id/grupoChip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="80dp"
+        android:layout_marginLeft="10dp">
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chipPS4"
+            style="@style/Widget.MaterialComponents.Chip.Filter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PS4"
+            android:textColor="@color/negro"
+            android:textSize="18sp" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chipPC"
+            style="@style/Widget.MaterialComponents.Chip.Filter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PC"
+            android:textColor="@color/negro"
+            android:textSize="18sp" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chipXBOX"
+            style="@style/Widget.MaterialComponents.Chip.Filter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="XBOX"
+            android:textColor="@color/negro"
+            android:textSize="18sp" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chipWII"
+            style="@style/Widget.MaterialComponents.Chip.Filter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="WII"
+            android:textColor="@color/negro"
+            android:textSize="18sp" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chipWIIu"
+            style="@style/Widget.MaterialComponents.Chip.Filter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="WIIU"
+            android:textColor="@color/negro"
+            android:textSize="18sp" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip3DS"
+            style="@style/Widget.MaterialComponents.Chip.Filter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3DS"
+            android:textColor="@color/negro"
+            android:textSize="18sp" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chipX360"
+            style="@style/Widget.MaterialComponents.Chip.Filter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="X360"
+            android:textColor="@color/negro"
+            android:textSize="18sp" />
+
+    </com.google.android.material.chip.ChipGroup>
+
+
+    <TextView
+        android:id="@+id/textoGeneros"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="GÉNEROS: "
+        android:textColor="#494141"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="190dp"/>
+
+    <!-- ScrollView para el siguiente grupo de chips -->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="414dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="170dp">
+
+        <!-- Grupo de botones chip para géneros -->
+        <com.google.android.material.chip.ChipGroup
+            android:id="@+id/grupoChipGeneros2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left">
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chipAccion"
+                style="@style/Widget.MaterialComponents.Chip.Filter"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Acción"
+                android:textColor="@color/negro"
+                android:textSize="18sp" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chipAventura"
+                style="@style/Widget.MaterialComponents.Chip.Filter"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Aventura"
+                android:textColor="@color/negro"
+                android:textSize="18sp" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chipDeportes"
+                style="@style/Widget.MaterialComponents.Chip.Filter"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Deportes"
+                android:textColor="@color/negro"
+                android:textSize="18sp" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chipDisparos"
+                style="@style/Widget.MaterialComponents.Chip.Filter"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Disparos"
+                android:textColor="@color/negro"
+                android:textSize="18sp" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chipEstrategia"
+                style="@style/Widget.MaterialComponents.Chip.Filter"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Estrategia"
+                android:textColor="@color/negro"
+                android:textSize="18sp" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chipLucha"
+                style="@style/Widget.MaterialComponents.Chip.Filter"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Lucha"
+                android:textColor="@color/negro"
+                android:textSize="18sp" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chipMusical"
+                style="@style/Widget.MaterialComponents.Chip.Filter"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Musical"
+                android:textColor="@color/negro"
+                android:textSize="18sp" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chipRol"
+                style="@style/Widget.MaterialComponents.Chip.Filter"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Rol"
+                android:textColor="@color/negro"
+                android:textSize="18sp" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chipSimulacion"
+                style="@style/Widget.MaterialComponents.Chip.Filter"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Simulación"
+                android:textColor="@color/negro"
+                android:textSize="18sp" />
+
+        </com.google.android.material.chip.ChipGroup>
+    </ScrollView>
+
+    <com.google.android.material.bottomappbar.BottomAppBar
+        android:id="@+id/bottomAppBar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="bottom"
+        app:fabAlignmentMode="center"
+        app:fabCradleMargin="10dp"
+        app:fabCradleRoundedCornerRadius="20dp"
+        app:fabCradleVerticalOffset="10dp"
+        android:backgroundTint="@color/azul_claro" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center"
+        android:layout_margin="16dp"
+        app:srcCompat="@drawable/captura_de_pantalla_2024_10_22_205650"
+        app:backgroundTint="@color/purpura_claro" />
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

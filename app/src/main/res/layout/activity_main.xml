@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?><!-- Layout para orientación vertical -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- Texto en la Toolbar -->
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:fontFamily="@font/courgette_regular"
+        android:gravity="center_horizontal"
+        android:text="Play Juegos"
+        android:textColor="@color/negro"
+        android:textSize="40sp"
+        android:textStyle="bold" />
+
+
+    <!-- Botón para la acción Play -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/botonPlay"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginRight="20dp"
+        android:text="PLAY"
+        android:textColor="@color/blanco"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:backgroundTint="@color/purpura_claro" />
+
+
+    <!-- Botón para la acción New Player -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/botonNewPlayer"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:text="NEW PLAYER"
+        android:textColor="@color/blanco"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:backgroundTint="@color/purpura_osc" />
+
+    <!-- Botón para la acción Preferencies -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/botonPreferencies"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:text="PREFERENCIES"
+        android:textColor="@color/blanco"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:backgroundTint="@color/purpura_claro" />
+
+    <!-- Botón para la acción About -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/botonAbout"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:text="ABOUT"
+        android:textColor="@color/blanco"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:backgroundTint="@color/purpura_osc" />
+</LinearLayout>

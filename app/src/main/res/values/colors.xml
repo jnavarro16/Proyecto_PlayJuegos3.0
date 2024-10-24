@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Definimos el color principal de tono púrpura -->
+    <color name="purpura_osc">#6200EE</color>
+
+    <!-- Tono más oscuro de púrpura que se usará como variante del color primario -->
+    <color name="purpura_claro">#3700B3</color>
+
+    <color name="azul_claro">#2196F3</color>
+    <color name="azul_osc">#1976D2</color>
+
+    <!-- Definimos el color blanco -->
+    <color name="blanco">#FFFFFF</color>
+
+    <!-- Definimos el color negro -->
+    <color name="negro">#000000</color>
+</resources>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?><!-- Layout para orientación horizontal -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+
+    <!-- Grupo de botones en un layout horizontal -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <!-- Primer grupo de botones -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <!-- Texto que muestra parte del mensaje (Play) -->
+
+            <!-- Botón para la acción Play -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="66dp"
+                android:gravity="right|center_horizontal"
+                android:text="Play"
+                android:textColor="@color/negro"
+                android:textSize="40sp"
+                android:textStyle="bold"
+                android:fontFamily="@font/courgette_regular"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/botonPlay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="10dp"
+                android:backgroundTint="@color/purpura_claro"
+                android:text="PLAY"
+                android:textColor="@color/blanco"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <!-- Botón para la acción Preferencies -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/botonPreferencies"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="10dp"
+                android:backgroundTint="@color/purpura_claro"
+                android:text="PREFERENCIES"
+                android:textColor="@color/blanco"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <!-- Segundo grupo de botones -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <!-- Texto que muestra parte del mensaje (Play) -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="66dp"
+                android:gravity="center_horizontal|left"
+                android:text=" Juegos"
+                android:textColor="@color/negro"
+                android:textSize="40sp"
+                android:textStyle="bold"
+                android:fontFamily="@font/courgette_regular"/>
+
+            <!-- Botón para la acción New Player -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/botonNewPlayer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="20dp"
+                android:backgroundTint="@color/purpura_osc"
+                android:text="NEW PLAYER"
+                android:textColor="@color/blanco"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <!-- Botón para la acción About -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/botonAbout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="20dp"
+                android:backgroundTint="@color/purpura_osc"
+                android:text="ABOUT"
+                android:textColor="@color/blanco"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme.PlayJuegos"  parent="Theme.MaterialComponents.DayNight.DarkActionBar" >
+        <!-- Color principal de la aplicación, se usará para elementos destacados. -->
+        <item name="colorPrimary">@color/purpura_osc</item>
+        <!-- Variante del color principal, más oscura o más clara del color principal -->
+        <item name="colorPrimaryVariant">@color/purpura_claro</item>
+        <!-- Color que se usará para el texto -->
+        <item name="colorOnPrimary">@android:color/white</item>
+
+        <!-- Color secundario (opcional) -->
+        <item name="colorSecondary">@color/azul_claro</item>
+        <!-- Variante del color secundario -->
+        <item name="colorSecondaryVariant">@color/azul_osc</item>
+        <!-- Color del texto sobre el fondo secundario -->
+        <item name="colorOnSecondary">@android:color/white</item>
+
+        <!-- Color de fondo de la ventana de la aplicación -->
+        <item name="android:windowBackground">@color/blanco</item>
+
+        <!-- Color del texto general -->
+        <item name="android:textColor">@color/negro</item>
+
+        <item name="colorPrimaryDark">@color/purpura_osc</item>
+
+        <!-- Botones -->
+        <item name="textAppearanceButton">@style/TextAppearance.MaterialComponents.Button</item>
+    </style>
+</resources>

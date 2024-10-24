@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?><!-- Layout para la actividad de añadir un nuevo jugador, envuelto del contenedor ScrollView para permitir el desplazamiento en horizontal -->
+<!-- LinearLayout fuera para permitir la barra fuera del Scrollview -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- Contenedor principal (ConstraintLayout) para organizar los elementos -->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="80dp"
+            android:visibility="visible">
+
+            <!-- Imagen del ícono de la persona -->
+            <ImageView
+                android:id="@+id/IconoPersona"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:src="@drawable/captura_de_pantalla_2024_10_03_202355"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <!-- Campo de texto para el nombre -->
+            <EditText
+                android:id="@+id/textoName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:backgroundTint="@color/azul_osc"
+                android:hint="Name"
+                android:textSize="24sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/IconoPersona"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <!-- Campo de texto para el Phonetic Name -->
+            <EditText
+                android:id="@+id/textoPhonetic"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:backgroundTint="@color/azul_osc"
+                android:hint="Phonetic Name"
+                android:textSize="24sp"
+                app:layout_constraintEnd_toEndOf="@+id/textoName"
+                app:layout_constraintStart_toStartOf="@+id/textoName"
+                app:layout_constraintTop_toBottomOf="@+id/textoName" />
+
+            <!-- Campo de texto para el apodo -->
+            <EditText
+                android:id="@+id/textoNickname"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:backgroundTint="@color/azul_osc"
+                android:hint="Nickname"
+                android:textSize="24sp"
+                app:layout_constraintEnd_toEndOf="@+id/textoPhonetic"
+                app:layout_constraintStart_toStartOf="@+id/textoPhonetic"
+                app:layout_constraintTop_toBottomOf="@+id/textoPhonetic" />
+
+            <!-- Icono de la cámara -->
+            <ImageView
+                android:id="@+id/IconoCamara"
+                android:layout_width="92dp"
+                android:layout_height="83dp"
+                android:layout_marginTop="60dp"
+                android:src="@drawable/captura_de_pantalla_2024_10_03_202504"
+                app:layout_constraintEnd_toEndOf="@+id/IconoPersona"
+                app:layout_constraintStart_toStartOf="@+id/IconoPersona"
+                app:layout_constraintTop_toBottomOf="@+id/textoNickname" />
+
+            <!-- Icono de Android -->
+            <ImageView
+                android:id="@+id/iconoAndroid"
+                android:layout_width="142dp"
+                android:layout_height="79dp"
+                android:layout_marginStart="110dp"
+                android:layout_marginTop="60dp"
+                app:layout_constraintStart_toStartOf="@+id/IconoCamara"
+                app:layout_constraintTop_toBottomOf="@+id/textoNickname"
+                app:srcCompat="@drawable/captura_de_pantalla_2024_10_03_202542" />
+
+            <!-- Botón CHANGE -->
+            <Button
+                android:id="@+id/botonChange"
+                style="@style/Widget.AppCompat.Button"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:layout_marginStart="280dp"
+                android:layout_marginTop="70dp"
+                android:backgroundTint="@color/purpura_claro"
+                android:text="CHANGE"
+                android:textColor="@color/blanco"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/IconoCamara"
+                app:layout_constraintTop_toBottomOf="@+id/textoNickname" /> <!-- Usando el estilo definido -->
+
+            <!-- Icono de teléfono -->
+            <ImageView
+                android:id="@+id/iconoTelef"
+                android:layout_width="142dp"
+                android:layout_height="79dp"
+                android:layout_marginTop="40dp"
+                android:src="@drawable/captura_de_pantalla_2024_10_03_202516"
+                app:layout_constraintEnd_toEndOf="@+id/IconoPersona"
+                app:layout_constraintStart_toStartOf="@+id/IconoCamara"
+                app:layout_constraintTop_toBottomOf="@+id/IconoCamara" />
+
+            <!-- Campo de texto para el Tel. -->
+            <EditText
+                android:id="@+id/textoTelef"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:backgroundTint="@color/azul_osc"
+                android:hint="Phone"
+                android:textSize="24sp"
+                app:layout_constraintEnd_toEndOf="@+id/textoNickname"
+                app:layout_constraintStart_toStartOf="@+id/textoNickname"
+                app:layout_constraintTop_toBottomOf="@+id/iconoAndroid" />
+
+            <!-- Spinner para seleccionar opciones -->
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:minHeight="48dp"
+                android:visibility="visible"
+                app:layout_constraintEnd_toEndOf="@+id/textoNickname"
+                app:layout_constraintTop_toBottomOf="@+id/textoTelef" />
+
+            <!-- Ícono de correo electrónico -->
+            <ImageView
+                android:id="@+id/iconoEmail"
+                android:layout_width="142dp"
+                android:layout_height="79dp"
+                android:src="@drawable/captura_de_pantalla_2024_10_03_202529"
+                app:layout_constraintEnd_toEndOf="@+id/IconoPersona"
+                app:layout_constraintStart_toStartOf="@+id/IconoPersona"
+                app:layout_constraintTop_toBottomOf="@+id/spinner" />
+
+            <!-- Campo de texto para el Email -->
+            <EditText
+                android:id="@+id/textoEmail"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="@color/azul_osc"
+                android:hint="Email"
+                android:textSize="24sp"
+                app:layout_constraintEnd_toEndOf="@+id/textoNickname"
+                app:layout_constraintStart_toStartOf="@+id/textoNickname"
+                app:layout_constraintTop_toBottomOf="@+id/spinner" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+</LinearLayout>

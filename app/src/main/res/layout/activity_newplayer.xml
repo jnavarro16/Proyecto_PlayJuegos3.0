@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?><!-- Layout para la actividad de añadir un nuevo jugador, envuelto del contenedor ScrollView para permitir el desplazamiento -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TableLayout
+            android:id="@+id/main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="80dp"
+            android:padding="16dp"
+            android:stretchColumns="1,2">
+
+            <!-- Fila para el nombre del jugador -->
+            <TableRow>
+
+                <ImageView
+                    android:id="@+id/IconoPersona"
+                    android:layout_width="50dp"
+                    android:layout_height="55dp"
+                    android:src="@drawable/captura_de_pantalla_2024_10_03_202355" />
+
+                <!-- "TextinputLayout" para habilitar la etiqueta flotante -->
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="Name">
+
+                    <!-- "TextInputEditText" para manejar la entrada de texto -->
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/TextoName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+            </TableRow>
+
+            <!-- Fila para Phonetic name -->
+            <TableRow>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="Phonetic name">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/textoPhonetic"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </TableRow>
+
+            <!-- Fila para el nickname -->
+            <TableRow>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="Nickname">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/textoNickname"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+            </TableRow>
+
+            <!-- Fila para el teléfono -->
+            <TableRow>
+
+                <ImageView
+                    android:id="@+id/iconoCamara"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="20dp"
+                    android:src="@drawable/captura_de_pantalla_2024_10_03_202504" />
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="184dp"
+                    android:layout_height="80dp"
+                    android:layout_marginTop="20dp"
+                    app:srcCompat="@drawable/captura_de_pantalla_2024_10_03_202542" />
+
+                <Button
+                    android:id="@+id/buttonChange"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="20dp"
+                    android:backgroundTint="@color/purpura_claro"
+                    android:text="CHANGE"
+                    android:textColor="@color/blanco" /> <!-- Usando el color blanco para el texto -->
+            </TableRow>
+
+            <!-- Fila para el spinner -->
+            <TableRow>
+
+                <ImageView
+                    android:id="@+id/imagenTelefono"
+                    android:layout_width="54dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/captura_de_pantalla_2024_10_03_202516" />
+
+                <EditText
+                    android:id="@+id/editTextPhone"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:hint="Phone"
+                    android:inputType="phone"
+                    android:minHeight="48dp" />
+
+            </TableRow>
+
+            <!-- Fila para el correo electrónico -->
+            <TableRow>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <Spinner
+                    android:id="@+id/spinner"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:minHeight="48dp"
+                    android:paddingLeft="50dp"
+                    android:visibility="visible" />
+            </TableRow>
+
+            <TableRow>
+
+                <ImageView
+                    android:id="@+id/imagenEmail"
+                    android:layout_width="54dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/captura_de_pantalla_2024_10_03_202529" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="E-mail">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/textoEmail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+            </TableRow>
+
+        </TableLayout>
+    </ScrollView>
+</LinearLayout>

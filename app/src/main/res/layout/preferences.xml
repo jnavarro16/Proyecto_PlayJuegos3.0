@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EDF5F6">
+
+    <TextView
+        android:id="@+id/textoOpcion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="80dp"
+        android:text="Elige una opción:"
+        android:textColor="#494141"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Grupo de Botones Radio -->
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="55dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textoOpcion">
+
+        <!-- Boton Angry Birds -->
+        <RadioButton
+            android:id="@+id/radioButtonAngry"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Angry Birds"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+        <!-- Boton Dragon Fly -->
+        <RadioButton
+            android:id="@+id/radioButtonDragon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Dragon Fly"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+        <!-- Boton Hill climbing racing -->
+        <RadioButton
+            android:id="@+id/radioButtonHill"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hill Climbing Racing"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+        <!-- Boton Pocket soccer -->
+        <RadioButton
+            android:id="@+id/radioButtonPocket"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pocket Soccer"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+        <!-- Boton Radiant defense -->
+        <RadioButton
+            android:id="@+id/radioButtonRadiant"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Radiant Defense"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+        <!-- Boton Ninja Jump -->
+        <RadioButton
+            android:id="@+id/radioButtonNinja"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ninja Jump"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+    </RadioGroup>
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="310dp"
+        android:max="5"
+        android:backgroundTint="@color/azul_osc"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RatingBar
+        android:id="@+id/ratingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="190dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:backgroundTint="@color/azul_claro"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/seekBar"
+        app:srcCompat="@drawable/captura_de_pantalla_2024_10_22_205650" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
